@@ -24,7 +24,7 @@ function createTail () {
         . . . . . . . . . . . . . . . . 
         . . . . . . . . . . . . . . . . 
         `, SpriteKind.Projectile)
-    tail.setPosition(snek.x + snek.vx * (info.score() / 20), snek.y + snek.y * (info.score() / 20))
+    tail.setPosition(snek.x - snek.vx * (info.score() / 10), snek.y - snek.vy * (info.score() / 10))
     pause(200)
     sprites.destroy(tail)
 }
